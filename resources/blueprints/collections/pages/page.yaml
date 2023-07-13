@@ -1,0 +1,53 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: content
+        field:
+          type: markdown
+          localizable: true
+      -
+        handle: tinymce_cloud_content
+        field:
+          config: TinyMCE_conf
+          display: 'TinyMCE Cloud Content'
+          type: tinymce_cloud
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: splash_field
+        field:
+          display: 'Splash Field'
+          type: splash
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: taggable_field
+        field:
+          display: 'Taggable Field'
+          type: taggable
+          icon: tags
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+title: Page

@@ -1,0 +1,10 @@
+cloud_channel: '6'
+defaults:
+  -
+    id: leqwid1s
+    name: TinyMCE_conf
+    configuration: |-
+      {
+      }
+    type: configuration
+    enabled: true
